@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  font-family: "sans-serif", Arial, Helvetica;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f2933, #0b0f14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(180deg, #1c232d, #151a22);
+  max-width: 380px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #262f3b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon i {
+  color: #ff7a18;
+  font-size: 18px;
+}
+
+.illustration i {
+  font-size: 36px;
+  color: #ff7a18;
+  margin: 0 6px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+p {
+  font-size: 14px;
+  color: #b1b7c3;
+  line-height: 1.6;
+}
+
+#rating-card p, #rating-card h2 {
+  text-align: left;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.rate {
+  width: 45px;
+  height: 45px;
+  font-size: 17px;
+  border-radius: 50%;
+  border: none;
+  background: #262f3b;
+  color: #b1b7c3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rate:hover {
+  background: #ff7a18;
+  color: black;
+}
+
+.rate.active, .submit:hover {
+  background: #fff;
+  color: #000;
+}
+
+.submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  background: #ff7a18;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+.illustration img {
+  width: 160px;
+  max-width: 100%;
+  margin: 20px auto;
+  display: block;
+}
+
+.illustration {
+  text-align: center;
+}
+
+.selected {
+  display: inline-block;
+  background: rgba(255,122,24,0.15);
+  color: #ff7a18;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 480px) {
+  .card {
+    padding: 24px;
+  }
+
+  .rate {
+    width: 40px;
+    height: 40px;
+  }
+}
