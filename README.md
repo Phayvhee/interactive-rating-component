@@ -19,5 +19,5 @@ A responsive interactive rating UI built with HTML, CSS, and JavaScript. Users c
 - npm start
 
 # Author
-Favour Adonis
+Favour Adonis -
 Frontend Developer
